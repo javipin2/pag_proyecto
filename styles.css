@@ -1,0 +1,311 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #54b48c;
+    color: #333;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h5 {
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: #54b48c;
+    /* Verde menta */
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+
+.btn-primary,
+.btn-success {
+    background-color: #78cbb1;
+    border-color: #78cbb1;
+    border-radius: 30px;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #6eb7a3;
+}
+
+.hero-section {
+    background-color: #54b48c;
+    padding: 100px 0;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.section-title {
+    color: #2e856e;
+}
+
+.lost-items-section {
+    background-color: #f2f9f5;
+    padding: 50px 0;
+}
+
+.card-lost-item {
+    background-color: #ffffff;
+    border: 1px solid #c4dfd5;
+}
+
+.card-lost-item:hover {
+    background-color: #e8f6ee;
+}
+
+.btn1 {
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+}
+
+.btn1>div {
+    background: rgb(138, 138, 138);
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+.btn1:hover div:first-child {
+    transform: rotate(45deg);
+    background: rgb(138, 138, 138);
+}
+
+.btn1:hover div:nth-child(2) {
+    opacity: 0;
+    background-color: red;
+}
+
+.btn1:hover div:last-child {
+    transform: rotate(-45deg);
+    background: rgb(138, 138, 138);
+}
+
+
+.offcanvas.offcanvas-start {
+    transition: all .5s;
+    transition-duration: 0.2s;
+    border-radius: 0 40% 40% 0;
+    background-color: white;
+}
+
+
+.padre {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh
+}
+
+.boton-inicio {
+    padding: 30px 0 0px 30px;
+    position: fixed;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-link {
+    animation-duration: 0.5;
+    border-radius: 20px;
+
+}
+
+.nav-link:hover {
+    background-color: #ccf0cc;
+    color: white;
+    transition: all 0.5s;
+    font-size: 21px;
+}
+.nav-link:hover a {
+    color: white;
+    transition: all 0.5s;
+    font-size: 19px;
+}
+
+.offcanvas.show {
+    border-radius: 0 15px 15px 0;
+    background-color: #b6ddcd;
+    padding: 20px;
+}
+
+.btn2 {
+    color: white;
+    font-size: 100%;
+    text-decoration: none;
+    background-color: black;
+    padding: 13px;
+    border-radius: 7px;
+    transition: all 0.7s;
+    background-size: cover;
+    background-position: left;
+    font-weight: 700;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: none;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-size: 23px;
+    font-family: math;
+}
+.offcanvas{
+    background: radial-gradient(circle, orange, yellow, #6ec2d0, #ff9cae00, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0, #6ec2d0);
+    background-size: 200% 200%;
+    animation: cambiar 15s cubic-bezier(0.41, 0.79, 0.64, 0.23) infinite;
+}
+@keyframes cambiar {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{ 
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.btn2:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    transition-duration: 0.7;
+    background-position: right;
+    box-shadow: 0 0 35px #1b2521;
+    padding: 15px 10px 15px 10px;
+}
+
+.container {
+    color: black;
+    transition: all 0.7s;
+}
+
+.container:hover {
+    color: white;
+}
+
+.offcanvas-header {
+    justify-content: space-between;
+    align-items: normal;
+}
+
+#contacto .container:hover {
+    color: black;
+}
+
+#contacto {
+    height: 87%;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+#objetos-perdidos {
+    height: 87%;
+}
+
+
+
+
+/* Aseguramos que la tarjeta esté bien posicionada */
+.cuerpo {
+    position: relative;
+    height: 100%;
+    /* Ajuste de altura de las tarjetas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    border-radius: 7px;
+    background-color: #bcbdbd;
+}
+
+/* Título "Visión" o "Misión" centrado */
+.card-title1 {
+    position: absolute;
+    font-size: 2.5rem;
+    /* Tamaño grande para destacar */
+    font-weight: bold;
+    z-index: 1;
+    /* Coloca el título por encima del texto */
+    /* Color con transparencia */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra el texto en el contenedor */
+    pointer-events: none;
+    /* Evita que el título interfiera con la interacción */
+}
+
+/* Ocultar inicialmente solo el texto */
+.card-text1 {
+    opacity: 0;
+    z-index: 2;
+    /* El texto aparecerá encima del título en hover */
+    transition: opacity 0.5s ease-in-out;
+    padding: 15px;
+}
+
+/* Mostrar el texto al hacer hover */
+.card:hover .card-text1 {
+    opacity: 1;
+    color: white;
+    font-size: 100%;
+}
+.card:hover .card-body1 {
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+/* Ajustamos el cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item{
+    padding: 10px;
+}
